@@ -15,7 +15,6 @@
 # Common directories for the project
 #
 cd /ecs-fargate-pv1.4-falco/src/falco
-wget --no-check-certificate https://1760-49986046-gh.circle-artifacts.com/0/packages/falco-0.22.1-32%2Be81e2f9-x86_64.tar.gz
 tar -xzf falco-0.22.1-32+e81e2f9-x86_64.tar.gz
 cd falco-0.22.1-32+e81e2f9-x86_64
 cp -rv etc/falco /etc/falco

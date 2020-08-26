@@ -4,6 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update \
 	&& apt install -y --no-install-recommends \
     wget \
+    curl \
     cmake \
     make \
     build-essential \

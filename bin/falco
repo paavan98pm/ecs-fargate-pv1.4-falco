@@ -15,6 +15,7 @@
 # Common directories for the project
 #
 
+
 falco -u --pidfile /var/run/falco.pid --daemon
 tail -f /var/log/falco.log &
 PORT=${PORT:-443}
