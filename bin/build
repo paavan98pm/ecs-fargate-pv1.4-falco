@@ -18,7 +18,7 @@ cd /ecs-fargate-pv1.4-falco/src/falco
 tar -xzf falco-0.22.1-32+e81e2f9-x86_64.tar.gz
 cd falco-0.22.1-32+e81e2f9-x86_64
 cp -rv etc/falco /etc/falco
-cp -v $ETC/falco/falco.yaml /etc/falco/falco.yaml
+cp -v /ecs-fargate-pv1.4-falco/src/etc/falco.yaml /etc/falco/falco.yaml
 cp -rv usr/bin/falco /usr/bin/falco
 cp -rv usr/share/falco /usr/share/falco
 
