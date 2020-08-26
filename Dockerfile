@@ -13,7 +13,8 @@ RUN apt update \
     ncat \
     git
 
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 COPY . /ecs-fargate-pv1.4-falco
 RUN /ecs-fargate-pv1.4-falco/bin/build
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 CMD ["/ecs-fargate-pv1.4-falco/bin/falco"]
